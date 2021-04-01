@@ -70,6 +70,7 @@ class AzureADAuthenticator extends OAuthAuthenticator {
     if (!useClientSecret && map.containsKey("client_secret")) {
       map.remove("client_secret");
     }
+    map["prompt"] = "login";
     map["resource"] = resource;
     return map;
   }

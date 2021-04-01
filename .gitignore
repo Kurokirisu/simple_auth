@@ -35,6 +35,8 @@ version
 **/doc/api/
 .dart_tool/
 .flutter-plugins
+.flutter-plugins**
+flutter_export**
 .packages
 .pub-cache/
 .pub/
