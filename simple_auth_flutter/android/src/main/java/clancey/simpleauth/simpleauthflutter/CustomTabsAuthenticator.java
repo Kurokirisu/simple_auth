@@ -40,7 +40,6 @@ public class CustomTabsAuthenticator {
         CustomTabsIntent intent = builder.build();
         final Uri uri =  Uri.parse(authenticator.initialUrl);
 
-        intent.intent.addFlags();
         Intent keepAliveIntent = new Intent().setClassName(
                 context.getPackageName(), KeepAliveService.class.getCanonicalName());
         intent.intent.putExtra("android.support.customtabs.extra.KEEP_ALIVE", keepAliveIntent);
