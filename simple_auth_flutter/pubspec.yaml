@@ -3,6 +3,7 @@ description: Simple Auth is the simplest way to authenticate your users/apis. Th
 version: 2.0.7
 author: James Clancey <james.clancey@gmail.com>
 homepage: https://github.com/clancey/simple_auth
+publish_to: none
 
 environment:
     sdk: ">=2.7.0 <3.0.0"
@@ -11,7 +12,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  simple_auth: ^2.0.7
+  simple_auth:
+    path: ../simple_auth
 flutter:
   plugin:
     platforms:
